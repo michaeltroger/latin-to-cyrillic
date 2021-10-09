@@ -1,9 +1,7 @@
-package com.michaeltroger.latintocyrillic.repo
-
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
+package com.michaeltroger.latintocyrillic.alphabets
 
 
-internal class SerbianAlphabet : LatinCyrillicAlphabet() {
+internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
 
     override val latinToCyrillicAlphabet: Map<String, String> by lazy {
         hashMapOf(
@@ -11,62 +9,65 @@ internal class SerbianAlphabet : LatinCyrillicAlphabet() {
                 "B" to "Б",
                 "V" to "В",
                 "G" to "Г",
-                "Dž" to "Џ",
                 "D" to "Д",
-                "Đ" to "Ђ",
                 "E" to "Е",
+                "Ë" to "Ё",
                 "Ž" to "Ж",
                 "Z" to "З",
                 "I" to "И",
-                "J" to "Ј",
+                "J" to "Й",
                 "K" to "К",
-                "Lj" to "Љ",
                 "L" to "Л",
                 "M" to "М",
-                "Nj" to "Њ",
                 "N" to "Н",
                 "O" to "О",
                 "P" to "П",
                 "R" to "Р",
                 "S" to "С",
                 "T" to "Т",
-                "Ć" to "Ћ",
                 "U" to "У",
                 "F" to "Ф",
                 "H" to "Х",
                 "C" to "Ц",
                 "Č" to "Ч",
                 "Š" to "Ш",
+                "Ŝ" to "Щ",
+                "È" to "Э",
+                "Û" to "Ю",
+                "Â" to "Я",
                 "a" to "а",
                 "b" to "б",
                 "v" to "в",
                 "g" to "г",
-                "dž" to "џ",
                 "d" to "д",
-                "đ" to "ђ",
                 "e" to "е",
+                "ë" to "ё",
                 "ž" to "ж",
                 "z" to "з",
                 "i" to "и",
-                "j" to "ј",
+                "j" to "й",
                 "k" to "к",
-                "lj" to "љ",
                 "l" to "л",
                 "m" to "м",
-                "nj" to "њ",
                 "n" to "н",
                 "o" to "о",
                 "p" to "п",
                 "r" to "р",
                 "s" to "с",
                 "t" to "т",
-                "ć" to "ћ",
                 "u" to "у",
                 "f" to "ф",
                 "h" to "х",
                 "c" to "ц",
                 "č" to "ч",
-                "š" to "ш"
+                "š" to "ш",
+                "ŝ" to "щ",
+                "y" to "ы",
+                "è" to "э",
+                "û" to "ю",
+                "â" to "я",
+                "ʹ" to "ь",
+                "ʺ" to "ъ"
         )
     }
 }

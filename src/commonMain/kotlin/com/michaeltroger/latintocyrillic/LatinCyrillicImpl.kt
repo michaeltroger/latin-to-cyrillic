@@ -1,10 +1,10 @@
 package com.michaeltroger.latintocyrillic
 
-import com.michaeltroger.latintocyrillic.repo.*
+import com.michaeltroger.latintocyrillic.alphabets.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-internal class CyrillicImpl : Cyrillic {
+internal class LatinCyrillicImpl : LatinCyrillic {
 
     private lateinit var repo: LatinCyrillicAlphabet
 

@@ -1,9 +1,7 @@
-package com.michaeltroger.latintocyrillic.repo
-
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
+package com.michaeltroger.latintocyrillic.alphabets
 
 
-internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
+internal class BelarusianIso9Alphabet : LatinCyrillicAlphabet() {
 
     override val latinToCyrillicAlphabet: Map<String, String> by lazy {
         hashMapOf(
@@ -16,7 +14,7 @@ internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
                 "Ë" to "Ё",
                 "Ž" to "Ж",
                 "Z" to "З",
-                "I" to "И",
+                "Ì" to "І",
                 "J" to "Й",
                 "K" to "К",
                 "L" to "Л",
@@ -28,12 +26,12 @@ internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
                 "S" to "С",
                 "T" to "Т",
                 "U" to "У",
+                "Ŭ" to "Ў",
                 "F" to "Ф",
                 "H" to "Х",
                 "C" to "Ц",
                 "Č" to "Ч",
                 "Š" to "Ш",
-                "Ŝ" to "Щ",
                 "È" to "Э",
                 "Û" to "Ю",
                 "Â" to "Я",
@@ -46,7 +44,7 @@ internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
                 "ë" to "ё",
                 "ž" to "ж",
                 "z" to "з",
-                "i" to "и",
+                "ì" to "і",
                 "j" to "й",
                 "k" to "к",
                 "l" to "л",
@@ -58,18 +56,17 @@ internal class RussianIso9Alphabet : LatinCyrillicAlphabet() {
                 "s" to "с",
                 "t" to "т",
                 "u" to "у",
+                "ŭ" to "ў",
                 "f" to "ф",
                 "h" to "х",
                 "c" to "ц",
                 "č" to "ч",
                 "š" to "ш",
-                "ŝ" to "щ",
                 "y" to "ы",
                 "è" to "э",
                 "û" to "ю",
                 "â" to "я",
-                "ʹ" to "ь",
-                "ʺ" to "ъ"
+                "ʹ" to "ь"
         )
     }
 }

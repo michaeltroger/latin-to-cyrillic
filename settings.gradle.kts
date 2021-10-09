@@ -1,3 +1,3 @@
 
-rootProject.name = "cyrillic-transliteration"
+rootProject.name = "latin-to-cyrillic"
 

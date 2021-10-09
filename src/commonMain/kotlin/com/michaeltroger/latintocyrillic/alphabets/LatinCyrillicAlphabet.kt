@@ -1,4 +1,4 @@
-package com.michaeltroger.latintocyrillic
+package com.michaeltroger.latintocyrillic.alphabets
 
 /**
  * Supports 1 or 2 latin script characters translated to 1 cyrillic character

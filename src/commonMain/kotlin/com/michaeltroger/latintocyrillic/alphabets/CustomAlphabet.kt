@@ -1,6 +1,5 @@
-package com.michaeltroger.latintocyrillic.repo
+package com.michaeltroger.latintocyrillic.alphabets
 
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
 import kotlin.IllegalArgumentException
 
 /**

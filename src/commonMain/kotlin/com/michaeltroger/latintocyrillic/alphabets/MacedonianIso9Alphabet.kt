@@ -1,6 +1,4 @@
-package com.michaeltroger.latintocyrillic.repo
-
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
+package com.michaeltroger.latintocyrillic.alphabets
 
 
 internal class MacedonianIso9Alphabet : LatinCyrillicAlphabet() {

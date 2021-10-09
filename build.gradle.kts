@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.michaeltroger"
-version = "1.0-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -37,7 +37,6 @@ kotlin {
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
-                implementation("org.jetbrains.kotlin:kotlin-test-common:1.5.0")
             }
         }
         val jvmMain by getting

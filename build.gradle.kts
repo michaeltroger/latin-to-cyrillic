@@ -20,14 +20,14 @@ kotlin {
             useJUnitPlatform()
         }
     }
-    js(LEGACY) {
-        browser {
-            commonWebpackConfig {
-                cssSupport.enabled = true
-            }
-        }
+    js(IR) {
+        browser()
+        nodejs()
+        binaries.executable()
     }
-    ios()
+    ios {
+        binaries.framework()
+    }
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")
     val nativeTarget = when {

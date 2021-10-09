@@ -1,9 +1,9 @@
 package com.michaeltroger.latintocyrillic.repo
 
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabetRepo
+import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
 
 
-internal class BulgarianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
+internal class BelarusianIso9Alphabet : LatinCyrillicAlphabet() {
 
     override val latinToCyrillicAlphabet: Map<String, String> by lazy {
         hashMapOf(
@@ -13,9 +13,10 @@ internal class BulgarianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "G" to "Г",
                 "D" to "Д",
                 "E" to "Е",
+                "Ë" to "Ё",
                 "Ž" to "Ж",
                 "Z" to "З",
-                "I" to "И",
+                "Ì" to "І",
                 "J" to "Й",
                 "K" to "К",
                 "L" to "Л",
@@ -27,12 +28,13 @@ internal class BulgarianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "S" to "С",
                 "T" to "Т",
                 "U" to "У",
+                "Ŭ" to "Ў",
                 "F" to "Ф",
                 "H" to "Х",
                 "C" to "Ц",
                 "Č" to "Ч",
                 "Š" to "Ш",
-                "Ŝ" to "Щ",
+                "È" to "Э",
                 "Û" to "Ю",
                 "Â" to "Я",
                 "a" to "а",
@@ -41,9 +43,10 @@ internal class BulgarianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "g" to "г",
                 "d" to "д",
                 "e" to "е",
+                "ë" to "ё",
                 "ž" to "ж",
                 "z" to "з",
-                "i" to "и",
+                "ì" to "і",
                 "j" to "й",
                 "k" to "к",
                 "l" to "л",
@@ -55,16 +58,17 @@ internal class BulgarianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "s" to "с",
                 "t" to "т",
                 "u" to "у",
+                "ŭ" to "ў",
                 "f" to "ф",
                 "h" to "х",
                 "c" to "ц",
                 "č" to "ч",
                 "š" to "ш",
-                "ŝ" to "щ",
+                "y" to "ы",
+                "è" to "э",
                 "û" to "ю",
                 "â" to "я",
-                "ʹ" to "ь",
-                "ʺ" to "ъ"
+                "ʹ" to "ь"
         )
     }
 }

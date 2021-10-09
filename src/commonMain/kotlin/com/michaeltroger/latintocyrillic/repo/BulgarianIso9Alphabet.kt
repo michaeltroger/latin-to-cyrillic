@@ -1,9 +1,9 @@
 package com.michaeltroger.latintocyrillic.repo
 
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabetRepo
+import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
 
 
-internal class UkrainianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
+internal class BulgarianIso9Alphabet : LatinCyrillicAlphabet() {
 
     override val latinToCyrillicAlphabet: Map<String, String> by lazy {
         hashMapOf(
@@ -11,15 +11,11 @@ internal class UkrainianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "B" to "Б",
                 "V" to "В",
                 "G" to "Г",
-                "G̀" to "Ґ",
                 "D" to "Д",
                 "E" to "Е",
-                "Ê" to "Є",
                 "Ž" to "Ж",
                 "Z" to "З",
                 "I" to "И",
-                "Ì" to "І",
-                "Ï" to "Ї",
                 "J" to "Й",
                 "K" to "К",
                 "L" to "Л",
@@ -43,15 +39,11 @@ internal class UkrainianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "b" to "б",
                 "v" to "в",
                 "g" to "г",
-                "g̀" to "ґ", // 2 letters in latin - not in unicode
                 "d" to "д",
                 "e" to "е",
-                "ê" to "є",
                 "ž" to "ж",
                 "z" to "з",
                 "i" to "и",
-                "ì" to "і",
-                "ï" to "ї",
                 "j" to "й",
                 "k" to "к",
                 "l" to "л",
@@ -71,7 +63,8 @@ internal class UkrainianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "ŝ" to "щ",
                 "û" to "ю",
                 "â" to "я",
-                "ʹ" to "ь"
+                "ʹ" to "ь",
+                "ʺ" to "ъ"
         )
     }
 }

@@ -6,21 +6,21 @@ import kotlinx.coroutines.withContext
 
 internal class CyrillicImpl : Cyrillic {
 
-    private lateinit var repo: LatinCyrillicAlphabetRepo
+    private lateinit var repo: LatinCyrillicAlphabet
 
     constructor(latin: List<String>, cyrillic: List<Char>) {
-        this.repo = CustomAlphabetRepo(latin = latin, cyrillic = cyrillic)
+        this.repo = CustomAlphabet(latin = latin, cyrillic = cyrillic)
     }
 
     constructor(alphabet: Alphabet) {
         this.repo = when (alphabet) {
-            Alphabet.BelarusianIso9 -> BelarusianIso9AlphabetRepo()
-            Alphabet.BulgarianIso9 -> BulgarianIso9AlphabetRepo()
-            Alphabet.Macedonian -> MacedonianAlphabetRepo()
-            Alphabet.MacedonianIso9 -> MacedonianIso9AlphabetRepo()
-            Alphabet.RussianIso9 -> RussianIso9AlphabetRepo()
-            Alphabet.Serbian -> SerbianAlphabetRepo()
-            Alphabet.UkrainianIso9 -> UkrainianIso9AlphabetRepo()
+            Alphabet.BelarusianIso9 -> BelarusianIso9Alphabet()
+            Alphabet.BulgarianIso9 -> BulgarianIso9Alphabet()
+            Alphabet.Macedonian -> MacedonianAlphabet()
+            Alphabet.MacedonianIso9 -> MacedonianIso9Alphabet()
+            Alphabet.RussianIso9 -> RussianIso9Alphabet()
+            Alphabet.Serbian -> SerbianAlphabet()
+            Alphabet.UkrainianIso9 -> UkrainianIso9Alphabet()
         }
     }
 

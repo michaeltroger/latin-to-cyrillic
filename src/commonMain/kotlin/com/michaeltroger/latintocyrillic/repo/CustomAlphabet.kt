@@ -1,12 +1,12 @@
 package com.michaeltroger.latintocyrillic.repo
 
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabetRepo
+import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
 import kotlin.IllegalArgumentException
 
 /**
  * Both must be of same size and correctly sorted
  */
-internal class CustomAlphabetRepo(latin: List<String>, cyrillic: List<Char>) : LatinCyrillicAlphabetRepo() {
+internal class CustomAlphabet(latin: List<String>, cyrillic: List<Char>) : LatinCyrillicAlphabet() {
 
     init {
         if (latin.size != cyrillic.size) {

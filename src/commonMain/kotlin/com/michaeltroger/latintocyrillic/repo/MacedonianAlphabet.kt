@@ -1,9 +1,9 @@
 package com.michaeltroger.latintocyrillic.repo
 
-import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabetRepo
+import com.michaeltroger.latintocyrillic.LatinCyrillicAlphabet
 
 
-internal class MacedonianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
+internal class MacedonianAlphabet : LatinCyrillicAlphabet() {
 
     override val latinToCyrillicAlphabet: Map<String, String> by lazy {
         hashMapOf(
@@ -16,15 +16,15 @@ internal class MacedonianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "E" to "Е",
                 "Ž" to "Ж",
                 "Z" to "З",
-                "Ẑ" to "Ѕ",
+                "Dz" to "Ѕ",
                 "I" to "И",
-                "J̌" to "Ј", // latin 2 letters - not part of unicode
+                "J" to "Ј",
                 "K" to "К",
                 "L" to "Л",
-                "L̂" to "Љ", // latin 2 letters - not part of unicode
+                "Lj" to "Љ",
                 "M" to "М",
                 "N" to "Н",
-                "N̂" to "Њ",  // latin 2 letters - not part of unicode
+                "Nj" to "Њ",
                 "O" to "О",
                 "P" to "П",
                 "R" to "Р",
@@ -36,7 +36,7 @@ internal class MacedonianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "H" to "Х",
                 "C" to "Ц",
                 "Č" to "Ч",
-                "D̂" to "Џ", // latin 2 letters - not part of unicode
+                "Dž" to "Џ",
                 "Š" to "Ш",
                 "a" to "а",
                 "b" to "б",
@@ -47,15 +47,15 @@ internal class MacedonianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "e" to "е",
                 "ž" to "ж",
                 "z" to "з",
-                "ẑ" to "ѕ",
+                "dz" to "ѕ",
                 "i" to "и",
-                "ǰ" to "ј",
+                "j" to "ј",
                 "k" to "к",
                 "l" to "л",
-                "l̂" to "љ", // latin 2 letters - not part of unicode
+                "lj" to "љ",
                 "m" to "м",
                 "n" to "н",
-                "n̂" to "њ", // latin 2 letters - not part of unicode
+                "nj" to "њ",
                 "o" to "о",
                 "p" to "п",
                 "r" to "р",
@@ -67,7 +67,7 @@ internal class MacedonianIso9AlphabetRepo : LatinCyrillicAlphabetRepo() {
                 "h" to "х",
                 "c" to "ц",
                 "č" to "ч",
-                "d̂" to "џ", // latin 2 letters - not part of unicode
+                "dž" to "џ",
                 "š" to "ш"
         )
     }

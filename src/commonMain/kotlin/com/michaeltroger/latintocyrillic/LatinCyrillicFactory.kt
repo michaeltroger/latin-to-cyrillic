@@ -11,8 +11,8 @@ public object LatinCyrillicFactory {
 
     /**
      * Use this method if you want to specify a custom Latin/Cyrillic alphabet
-     * @param latin 1 or 2 characters are allowed to describe a letter
-     * @param cyrillic  1 character is allowed to describe a letter
+     * @param latin 1 or 2 characters are allowed to describe a letter, one list item describes one letter
+     * @param cyrillic  1 character is allowed to describe a letter, one list item describes one letter
      * Both [latin] and [cyrillic] lists need to be of same size.
      * Index 0 of [latin] is associated with index 0 of [cyrillic], index 1 with index 1 and so on
      * @return the [LatinCyrillic] object initialized with the custom alphabet

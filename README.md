@@ -45,7 +45,9 @@ LatinCyrillicFactory.create(latin = listOf("A","B","C"), cyrillic = listOf('А',
 The limitation here is that a latin letter may be described by 1 or 2 characters and a cyrillic letter by 1 character.
 
 ### Adding new alphabets
-You are free to open Pull requests for adding more alphabets, but I ask for your understanding that I only integrate unambiguous conversion tables. E.g. with transcription tables you can only transcript from one script to the other, but not back to the original one! That's why this lib only includes a limited set of transliteration alphabets. Any new alphabet should be an official standard and allow conversion forth and back. This is mostly only possible for ISO 9:1995 standards. In doubts please contact me upfront before investing too much time. Anyways you can always use a custom alphabet, so it doesn't necessarilly need to be part of the lib here. 
+You are free to open Pull requests for adding more alphabets, but I ask for your understanding that I only integrate unambiguous conversion tables. E.g. with transcription tables you can only transcript from one script to the other, but not back to the original one! That's why this lib only includes a limited set of transliteration alphabets.
+
+Any new alphabet should be an official standard and allow conversion forth and back. This is mostly only possible for ISO 9:1995 standards. Another limitation coming from the business logic is that Latin letters may have 1 or 2 characters, while Cyrillic letters may only have 1. In doubts please contact me upfront before investing too much time. Anyways you can always use a custom alphabet, so the alphabet you use doesn't necessarilly need to be part of the lib here. 
 
 
 

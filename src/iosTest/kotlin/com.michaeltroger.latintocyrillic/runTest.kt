@@ -6,6 +6,6 @@ import kotlinx.coroutines.runBlocking
 import kotlin.coroutines.CoroutineContext
 
 
-actual val testCoroutineContext: CoroutineContext = Dispatchers.Main
-actual fun runBlockingTest(block: suspend CoroutineScope.() -> Unit) =
+internal actual val testCoroutineContext: CoroutineContext = Dispatchers.Main
+internal actual fun runBlockingTest(block: suspend CoroutineScope.() -> Unit) =
  runBlocking { this.block() }

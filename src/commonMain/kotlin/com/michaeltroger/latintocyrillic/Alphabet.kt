@@ -1,5 +1,8 @@
 package com.michaeltroger.latintocyrillic
 
+/**
+ * Describing the predefined conversion tables
+ */
 public enum class Alphabet {
     BelarusianIso9,
     BulgarianIso9,

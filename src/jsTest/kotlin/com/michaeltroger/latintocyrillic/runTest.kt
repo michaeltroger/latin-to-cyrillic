@@ -5,6 +5,6 @@ import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.promise
 import kotlin.coroutines.CoroutineContext
 
-val testScope = MainScope()
-actual val testCoroutineContext: CoroutineContext = testScope.coroutineContext
-actual fun runBlockingTest(block: suspend CoroutineScope.() -> Unit): dynamic = testScope.promise { this.block() }
+private val testScope = MainScope()
+internal actual val testCoroutineContext: CoroutineContext = testScope.coroutineContext
+internal actual fun runBlockingTest(block: suspend CoroutineScope.() -> Unit): dynamic = testScope.promise { this.block() }

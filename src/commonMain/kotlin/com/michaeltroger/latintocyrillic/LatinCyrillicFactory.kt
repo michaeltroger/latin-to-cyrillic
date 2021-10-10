@@ -1,5 +1,8 @@
 package com.michaeltroger.latintocyrillic
 
+/**
+ * Use to initialize a [LatinCyrillic] object
+ */
 public object LatinCyrillicFactory {
 
     /**

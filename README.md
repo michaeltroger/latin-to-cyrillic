@@ -15,13 +15,20 @@ Supported alphabets:
 - Ukrainian (ISO 9:1995)
 - Custom alphabet (see further down for details)
 
-### Add dependency:
+### Add dependency for your platform:
 ```
 dependencies {
-    implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' // Android / Kotlin Multiplatform (specify in commonMain)
-    implementation 'com.michaeltroger:latin-to-cyrillic-jvm:1.0.0' // Java Virtual Machine
-    implementation 'com.michaeltroger:latin-to-cyrillic-js:1.0.0' // JavaScript
-    implementation 'com.michaeltroger:latin-to-cyrillic-native:1.0.0' // Kotlin Native
+    // Android / Kotlin Multiplatform (specify in commonMain):
+    implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' 
+    
+    // Java Virtual Machine:
+    implementation 'com.michaeltroger:latin-to-cyrillic-jvm:1.0.0'
+ 
+    // JavaScript:
+    implementation 'com.michaeltroger:latin-to-cyrillic-js:1.0.0'
+    
+    // Kotlin Native:
+    implementation 'com.michaeltroger:latin-to-cyrillic-native:1.0.0'
 }
 ```
 ### Usage in Kotlin Android:

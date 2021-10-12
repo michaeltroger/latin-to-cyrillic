@@ -18,7 +18,7 @@ Supported alphabets:
 ### Add dependency for your platform:
 ```
 dependencies {
-    // Android / Kotlin Multiplatform (specify in commonMain):
+    // Android / Kotlin Multiplatform (commonMain):
     implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' 
     
     // Java Virtual Machine:

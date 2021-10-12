@@ -1,0 +1,40 @@
+name: Create Release Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+        
+    - name: set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        cache: gradle
+
+    - name: grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Run unit tests
+      run: ./gradlew allTests
+
+    - name: set up signing info
+      run: |
+        echo "$MAVEN_SIGNING_PROPERTIES" > maven_signing.txt
+        echo "$MAVEN_SIGNING_KEY" > secretkeyringfile.txt.base64
+        base64 -d secretkeyringfile.txt.base64 > secretkeyringfile.txt
+        rm secretkeyringfile.txt.base64
+      env:
+        MAVEN_SIGNING_PROPERTIES: ${{ secrets.MAVEN_SIGNING_PROPERTIES }}
+        MAVEN_SIGNING_KEY: ${{ secrets.MAVEN_SIGNING_KEY }}
+      
+    - name: Build app bundle with Gradle
+      run: ./gradlew publishAllPublicationsToSonatypeRepository
+
+

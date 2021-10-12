@@ -13,3 +13,5 @@ keystore.jks
 *.swp
 playstore_access.json
 Gemfile.lock
+maven_signing.txt
+secretkeyringfile.txt

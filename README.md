@@ -3,7 +3,7 @@
 [![CI](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml/badge.svg)](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml) [![Maven Central](https://img.shields.io/maven-central/v/com.michaeltroger/latin-to-cyrillic)](https://repo.maven.apache.org/maven2/com/michaeltroger/latin-to-cyrillic/)
 
 A library for converting text from Latin script to Cyrillic script and vice versa. Can be compiled for JVM/Android, JavaScript, Desktop Native and iOS.
-Simple to use and modern Coroutine based API.
+Simple to use and modern Coroutine based API. Used by the popular [Cyrillic Transliterator Android app](https://github.com/michaeltroger/latintocyrillic-android).
 
 Supported alphabets:
 - Serbian Azbuka

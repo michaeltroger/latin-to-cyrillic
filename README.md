@@ -31,9 +31,11 @@ dependencies {
     implementation 'com.michaeltroger:latin-to-cyrillic-native:1.0.0'
 }
 ```
+Note that you will also need to add a dependency to [Coroutines](https://github.com/Kotlin/kotlinx.coroutines).
 ### Usage in Kotlin Android:
 ```
 val latinCyrillic = LatinCyrillicFactory.create(Alphabet.Serbian)
+// Inside a Coroutine:
 val cyrillic = latinCyrillic.latinToCyrillic("Bolje") // returns "Боље"
 val latin = latinCyrillic.cyrillicToLatin("Боље") // returns "Bolje"
 ```

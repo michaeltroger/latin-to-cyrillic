@@ -22,7 +22,7 @@ jobs:
         cache: gradle
 
     - name: Install needed dependencies
-      run: apt install libncurses5
+      run: sudo apt install -y libncurses5
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Run unit tests

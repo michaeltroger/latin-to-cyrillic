@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
@@ -21,8 +21,6 @@ jobs:
         distribution: 'adopt'
         cache: gradle
 
-    - name: Install needed dependencies
-      run: sudo apt install -y libncurses6
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Run unit tests

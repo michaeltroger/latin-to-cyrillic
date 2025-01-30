@@ -33,4 +33,4 @@ jobs:
       with:
         name: test_reports
         path: |
-          /api/
+          api/

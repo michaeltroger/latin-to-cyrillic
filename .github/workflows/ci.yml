@@ -24,7 +24,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Run api dump
-      run: ./gradlew apiDump
+      run: ./gradlew apiDump --stacktrace
     - name: Run unit tests
       run: ./gradlew allTests
 

@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform") version "1.5.10"
     id("convention.publication")
-    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.8.0"
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.13.2"
 }
 
 group = "com.michaeltroger"

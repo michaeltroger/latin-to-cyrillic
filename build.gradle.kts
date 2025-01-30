@@ -1,6 +1,7 @@
 plugins {
     kotlin("multiplatform") version "1.5.10"
     id("convention.publication")
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.17.0"
 }
 
 group = "com.michaeltroger"
@@ -19,14 +20,6 @@ kotlin {
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
         }
-    }
-    js(IR) {
-        browser()
-        nodejs()
-        binaries.executable()
-    }
-    ios {
-        binaries.framework()
     }
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")

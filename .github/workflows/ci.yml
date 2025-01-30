@@ -27,4 +27,12 @@ jobs:
       run: ./gradlew apiDump --stacktrace
     - name: Run unit tests
       run: ./gradlew allTests
-
+    - name: ls
+      run: ls
+    - name: Upload test reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test_reports
+        path: |
+          */build/reports/api/

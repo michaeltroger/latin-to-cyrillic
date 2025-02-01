@@ -20,6 +20,9 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: 21
+        
+    - name: Verify binary compatibility
+      run: ./gradlew check
 
     - name: Run unit tests
       run: ./gradlew allTests

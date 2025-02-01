@@ -2,7 +2,7 @@
 ## Cyrillic Transliteration
 [![CI](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml/badge.svg)](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml) [![Maven Central](https://img.shields.io/maven-central/v/com.michaeltroger/latin-to-cyrillic)](https://repo1.maven.org/maven2/com/michaeltroger/)
 
-A library for converting text from Latin script to Cyrillic script and vice versa. Can be compiled for JVM/Android, JavaScript, Desktop Native and iOS.
+A library for converting text from Latin script to Cyrillic script and vice versa.
 Simple to use and modern Coroutine based API. Used by the popular [Cyrillic Transliterator Android app](https://github.com/michaeltroger/latintocyrillic-android).
 
 Supported alphabets:
@@ -18,20 +18,12 @@ Supported alphabets:
 ### Add dependency for your platform:
 ```
 dependencies {
-    // Android / Kotlin Multiplatform (commonMain):
+    // Android / JVM / Kotlin Multiplatform:
     implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' 
-    
-    // Java Virtual Machine:
-    implementation 'com.michaeltroger:latin-to-cyrillic-jvm:1.0.0'
- 
-    // JavaScript:
-    implementation 'com.michaeltroger:latin-to-cyrillic-js:1.0.0'
-    
-    // Kotlin Native:
-    implementation 'com.michaeltroger:latin-to-cyrillic-native:1.0.0'
 }
 ```
 Note that you will also need to add a dependency to [Coroutines](https://github.com/Kotlin/kotlinx.coroutines).
+
 ### Usage in Kotlin Android:
 ```
 val latinCyrillic = LatinCyrillicFactory.create(Alphabet.Serbian)
@@ -39,7 +31,6 @@ val latinCyrillic = LatinCyrillicFactory.create(Alphabet.Serbian)
 val cyrillic = latinCyrillic.latinToCyrillic("Bolje") // returns "Боље"
 val latin = latinCyrillic.cyrillicToLatin("Боље") // returns "Bolje"
 ```
-
 
 You can also check whether a text is considered Cyrillic:
 ```
@@ -62,8 +53,6 @@ The limitation here is that a latin letter may be described by 1 or 2 characters
 You are free to open Pull requests for adding more alphabets, but I ask for your understanding that I only integrate unambiguous conversion tables. E.g. with transcription tables you can only transcript from one script to the other, but not back to the original one! That's why this lib only includes a limited set of transliteration alphabets.
 
 Any new alphabet should be an official standard and allow conversion forth and back. This is mostly only possible for ISO 9:1995 standards. Another limitation coming from the business logic is that Latin letters may have 1 or 2 characters, while Cyrillic letters may only have 1. In doubts please contact me upfront before investing too much time. Anyways you can always use a custom alphabet, so the alphabet you use doesn't necessarilly need to be part of the lib here. 
-
-
 
 Author:
 [Michael Troger](https://michaeltroger.com)

@@ -18,7 +18,7 @@ Supported alphabets:
 ### Add dependency for your platform:
 ```
 dependencies {
-    // Android / JVM / Kotlin Multiplatform:
+    // Android / JVM:
     implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' 
 }
 ```

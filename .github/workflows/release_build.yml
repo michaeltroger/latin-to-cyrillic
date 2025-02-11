@@ -21,7 +21,7 @@ jobs:
       run: ./gradlew check
 
     - name: Run unit tests
-      run: ./gradlew allTests
+      run: ./gradlew jvmTest
 
     - name: Publish to MavenCentral
       run: ./gradlew publishToMavenCentral --no-configuration-cache

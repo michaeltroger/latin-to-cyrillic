@@ -24,8 +24,5 @@ jobs:
     - name: Verify binary compatibility
       run: ./gradlew check
 
-    - name: Build
-      run: ./gradlew build
-
     - name: Run unit tests
       run: ./gradlew jvmTest

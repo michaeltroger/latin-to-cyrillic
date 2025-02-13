@@ -91,8 +91,8 @@ mavenPublishing {
     coordinates(groupId = group.toString(), artifactId = "latin-to-cyrillic", version = version.toString())
 
     pom {
-        name = "Latin to Cyrillic Library"
-        description = "A Kotlin Multiplatform Library for Latin to Cyrillic transliteration"
+        name = "Latin to Cyrillic KMP"
+        description = "A Kotlin Multiplatform Library for Latin to Cyrillic and Cyrillic to Latin transliteration / conversion."
         inceptionYear = "2021"
         url = "https://github.com/michaeltroger/latin-to-cyrillic"
         licenses {

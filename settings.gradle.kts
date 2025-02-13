@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "latin-to-cyrillic"
+rootProject.name = "latin-to-cyrillic-kmp"
 include(":library")

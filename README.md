@@ -14,10 +14,9 @@ Supported alphabets:
 - Ukrainian (ISO 9:1995)
 - Custom alphabet (see further down for details)
 
-### Add dependency for your platform:
+### Add dependency:
 ```
 dependencies {
-    // Android / JVM:
     implementation 'com.michaeltroger:latin-to-cyrillic:2.0.0' 
 }
 ```

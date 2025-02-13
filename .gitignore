@@ -1,13 +1,12 @@
 *.iml
 .gradle
-/local.properties
-/.idea
+local.properties
+.idea
 .DS_Store
-/build
-/captures
+build
+captures
 .externalNativeBuild
 .cxx
-local.properties
 keystore.properties
 keystore.jks
 *.swp
@@ -15,3 +14,6 @@ playstore_access.json
 Gemfile.lock
 maven_signing.txt
 secretkeyringfile.txt
+xcuserdata
+.kotlin
+*.gpg

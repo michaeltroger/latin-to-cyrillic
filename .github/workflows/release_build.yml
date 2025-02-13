@@ -10,31 +10,24 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-        
-    - name: set up JDK 11
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'adopt'
-        cache: gradle
 
-    - name: grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: 21
+
+    - name: Verify binary compatibility
+      run: ./gradlew check
 
     - name: Run unit tests
-      run: ./gradlew allTests
+      run: ./gradlew jvmTest
 
-    - name: set up signing info
-      run: |
-        echo "$MAVEN_SIGNING_PROPERTIES" > maven_signing.txt
-        echo "$MAVEN_SIGNING_KEY" > secretkeyringfile.txt.base64
-        base64 -d secretkeyringfile.txt.base64 > secretkeyringfile.txt
-        rm secretkeyringfile.txt.base64
+    - name: Publish to MavenCentral
+      run: ./gradlew publishToMavenCentral --no-configuration-cache
       env:
-        MAVEN_SIGNING_PROPERTIES: ${{ secrets.MAVEN_SIGNING_PROPERTIES }}
-        MAVEN_SIGNING_KEY: ${{ secrets.MAVEN_SIGNING_KEY }}
-      
-    - name: Build app bundle with Gradle
-      run: ./gradlew publishAllPublicationsToSonatypeRepository
-
-
+        ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+        ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+        ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
+        ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_PASSWORD }}
+        ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_KEY_CONTENTS }}

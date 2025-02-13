@@ -1,8 +1,7 @@
-# Latin To Cyrillic Kotlin Multiplatform Library
-## Cyrillic Transliteration
+# Latin To Cyrillic KMP (Kotlin Multiplatform) Library
 [![CI](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml/badge.svg)](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml) [![Maven Central](https://img.shields.io/maven-central/v/com.michaeltroger/latin-to-cyrillic)](https://repo1.maven.org/maven2/com/michaeltroger/)
 
-A library for converting text from Latin script to Cyrillic script and vice versa.
+A library for converting / transliterating text from Latin script to Cyrillic script and vice versa.
 Simple to use and modern Coroutine based API. Used by the popular [Cyrillic Transliterator Android app](https://github.com/michaeltroger/latintocyrillic-android).
 
 Supported alphabets:
@@ -19,7 +18,7 @@ Supported alphabets:
 ```
 dependencies {
     // Android / JVM:
-    implementation 'com.michaeltroger:latin-to-cyrillic:1.0.0' 
+    implementation 'com.michaeltroger:latin-to-cyrillic:2.0.0' 
 }
 ```
 Note that you will also need to add a dependency to [Coroutines](https://github.com/Kotlin/kotlinx.coroutines).

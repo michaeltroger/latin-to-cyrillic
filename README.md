@@ -1,7 +1,7 @@
 # Latin To Cyrillic KMP (Kotlin Multiplatform) Library
 [![CI](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml/badge.svg)](https://github.com/michaeltroger/latin-to-cyrillic/actions/workflows/ci.yml) [![Maven Central](https://img.shields.io/maven-central/v/com.michaeltroger/latin-to-cyrillic)](https://central.sonatype.com/search?namespace=com.michaeltroger)
 
-A library for converting / transliterating text from Latin script to Cyrillic script and vice versa.
+A KMP / Android library for converting / transliterating text from Latin script to Cyrillic script and vice versa.
 Simple to use and modern Coroutine based API. Used by the popular [Cyrillic Transliterator Android app](https://github.com/michaeltroger/latintocyrillic-android).
 
 Supported alphabets:
